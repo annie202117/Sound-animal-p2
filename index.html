@@ -1,0 +1,36 @@
+html>
+  <head>
+    <title> Animal Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center" >
+      <h2> Animal Sound Recognition </h2>
+        <p>Note: Make sonund such as barks, meows and roars or simply just use background noise to see what animal the sound comes from</p>
+    </div>
+    <div class="main_div">
+      <center>
+        <br>
+        <button class="btn btn-warning" onclick="startClassification();">START</button>
+        <h3 id="result_label"> I can hear - </h3>
+        <h4 id="result_confidence">Accuracy - </h4>
+        <br>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.goodhousekeeping.com%2Flife%2Fpets%2Fg4531%2Fcutest-dog-breeds%2F&psig=AOvVaw31afTBJxDqV1moOxItppyP&ust=1687454385529000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKD50Mvv1P8CFQAAAAAdAAAAABAE" id="dog" width="300" height="300">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTabby_cat&psig=AOvVaw1IDXG5au2yiW8PB1zlBTAu&ust=1687454415586000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKC1kNrv1P8CFQAAAAAdAAAAABAE" id="cat" width="300" height="300">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.britannica.com%2Fanimal%2Flion&psig=AOvVaw1BoUKPgmc8yA3ebIpD03N7&ust=1687454463856000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKiQjvHv1P8CFQAAAAAdAAAAABAE" id="lion" width="300" height="300">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDairy_cattle&psig=AOvVaw0_7aWgMfsDOVfDXoJ9Fepr&ust=1687454488288000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCODy0fzv1P8CFQAAAAAdAAAAABAE" id="cow" width="300" height="300">
+      </center>
+    </div>
+    <div class="copy_right_footer">
+      Developed by - Bianca Pearlin Frankio Charles
+    </div>
+<script src="main.js"></script>
+  </body>
+</html>
+
